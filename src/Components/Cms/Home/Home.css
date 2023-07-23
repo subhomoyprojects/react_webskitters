@@ -1,7 +1,126 @@
-img {
-  max-width: 100%;
+:root {
+  --gap: 30px;
+  --count: 4;
+  --montFont: "Montserrat", sans-serif;
 }
-.imgControl {
-  margin-inline: auto;
+
+.banner-wrapper .container {
+  position: relative;
+}
+.banner-content-holder {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
   max-width: 500px;
+  background: linear-gradient(90deg, rgba(44, 48, 52, 1), rgba(196, 196, 196, 0));
+  padding: 100px 40px;
+}
+
+.banner-content-holder h1 {
+  color: #fff;
+  text-transform: capitalize;
+}
+.banner-content-holder p {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+.items > * {
+  flex: 0 0 auto;
+  width: calc(100% / var(--count) - ((var(--gap) - (var(--gap) / var(--count)))));
+}
+.pro-img {
+  line-height: 0;
+  max-height: 248px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.pro-img > img {
+  max-height: 248px;
+  min-height: 248px;
+  object-fit: cover;
+}
+.pro-content {
+  padding-top: 20px;
+}
+.pro-content h5 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000;
+  font-family: var(--montFont);
+}
+.rating {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.rating span:not(:last-child) {
+  margin-right: 7px;
+}
+.rating span {
+  display: inline-flex;
+  align-items: center;
+}
+.rating span img {
+  margin-left: 5px;
+}
+.price {
+  display: inline-flex;
+  align-items: center;
+}
+.price > * {
+  display: inline-flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+.price > .old-price {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+.accessories-img {
+  line-height: 0;
+  position: relative;
+  border-radius: 2px;
+  overflow: hidden;
+  max-height: 500px;
+}
+.accessories-img::after {
+  position: absolute;
+  background-color: rgba(13, 13, 13, 0.4);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.accessories-img img {
+  object-fit: cover;
+  min-height: 500px;
+  width: 100%;
+}
+.accessories-content {
+  position: absolute;
+  bottom: 0;
+  padding: 30px;
+  color: #fff;
+}
+.accessories-content h3 span {
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: var(--montFont);
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }

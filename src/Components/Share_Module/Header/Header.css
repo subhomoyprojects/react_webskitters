@@ -1,0 +1,17 @@
+.navbar .bg-dark {
+  background-color: #27343f;
+}
+.navbar-brand > img {
+  max-height: 70px;
+}
+.nav-link:hover {
+  color: #fff;
+}
+@media (min-width: 991px) {
+  .navbar-nav li .nav-link {
+    padding-inline: 20px !important;
+  }
+}
+.navbar-nav li .nav-link.active {
+  border: 1px solid #d9b867;
+}

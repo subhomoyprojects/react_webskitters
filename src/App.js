@@ -1,4 +1,3 @@
-import "./App.css";
 import Header from "./Components/Share_Module/Header/Header";
 import Home from "./Components/Cms/Home/Home";
 import About from "./Components/Cms/About/About";
