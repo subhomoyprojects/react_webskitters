@@ -1,0 +1,14 @@
+npx create-react-app projectname
+npm start
+
+
+react holo opensource javascript component base library jata akta single page application represent korcha 
+
+index.html holo main page ar single page 
+app.js holo main component
+
+
+Package-lock.json file ar kaj holo npm js install hocha sa gulo ka maintain kora
+package.json holo npm gulo install hoy
+
+routing install comment npm i react-router-dom
