@@ -6,16 +6,21 @@ import Product from "./Components/Cms/Product/Product";
 import Login from "./Components/Auth/Login/Login";
 import Register from "./Components/Auth/Register/Register";
 import Footer from "./Components/Share_Module/Footer/Footer";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 export default function App() {
   return (
     <div className="App">
-      <Header />
-      <Home />
-      <About />
-      <Product />
-      <Login />
-      <Register />
-      <Footer />
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }

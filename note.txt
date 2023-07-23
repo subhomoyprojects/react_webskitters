@@ -12,3 +12,6 @@ Package-lock.json file ar kaj holo npm js install hocha sa gulo ka maintain kora
 package.json holo npm gulo install hoy
 
 routing install comment npm i react-router-dom
+
+inline style (css)
+style={{ marginLeft: "10px" }}
